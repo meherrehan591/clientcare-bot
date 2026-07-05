@@ -8,7 +8,9 @@ from telegram.ext import (
     filters,
 )
 
-TOKEN = "YOUR_BOT_TOKEN"
+import os
+
+TOKEN = os.getenv("TOKEN")
 ADMIN_ID = 5628303960
 
 NAME, PHONE, EMAIL, REQUIREMENT = range(4)
